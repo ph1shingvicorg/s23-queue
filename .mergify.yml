@@ -1,5 +1,6 @@
 queue_rules:
   - name: default
-    queue_conditions: []
+    queue_conditions:
+      - label = ready-to-merge
     merge_conditions: []
     batch_size: 1
