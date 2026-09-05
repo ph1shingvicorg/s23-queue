@@ -1,6 +1,7 @@
 queue_rules:
   - name: default
-    queue_conditions:
-      - label = ready-to-merge
-    merge_conditions: []
+    queue_conditions: []
+    merge_conditions:
+      - check-success = ci
     batch_size: 1
+    allow_inplace_checks: false
