@@ -4,4 +4,3 @@ queue_rules:
     merge_conditions:
       - check-success = ci
     batch_size: 1
-    allow_inplace_checks: false
